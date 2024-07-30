@@ -3,6 +3,8 @@
 
 ## 1. 프로젝트 소개
 
+![KakaoTalk_20240730_140706522](https://github.com/user-attachments/assets/bbf87c18-8bb5-4f78-8f3b-89815df475c1)
+
 
 ## 2. 개발 환경
 
