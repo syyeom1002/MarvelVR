@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/5eef0661-d825-46ae-89ce-9f7c00323148)# [MarvelVR Game Portfolio]
+# [MarvelVR Game Portfolio]
 
 
 ## 1. 프로젝트 소개
@@ -50,13 +50,13 @@
 
 <br>
 
-## 4. 핵심 기능
-
-
-## 5. 개발 인원 및 담당
+## 4. 개발 인원 및 담당
 
 + 총 2인 (프로그래머 2인)
 + 공중 적 생성 및 공격 패턴 , 캐릭터 선택 UI 제작 , 방패 던지기 , 막기 , 사운드
+
+
+## 5. 핵심 기능
 
 
 ## 6. 기술 문서( 담당한 기능 코드리뷰 포함)
