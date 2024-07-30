@@ -1,4 +1,4 @@
-# [MarvelVR Game Portfolio]
+![image](https://github.com/user-attachments/assets/5eef0661-d825-46ae-89ce-9f7c00323148)# [MarvelVR Game Portfolio]
 
 
 ## 1. 프로젝트 소개
@@ -22,6 +22,7 @@
 > 
 > + 개발기간: 2023.11.01 ~ 2024.01.15 ( 약 2개월 )
 
+<br>
 
 ## 2. 개발 환경
 
@@ -33,35 +34,40 @@
 
 + 형상 관리: SVN
 
+<br>
 
 ## 3. 사용 기술
 | 기술 | 설명 |
 |:---:|:---|
-| 디자인 패턴 | ● **싱글톤** 패턴을 사용하여 Manager 관리 <br> ● **State** 패턴을 사용하여 캐릭터의 기능을 직관적으로 관리 |
+| Oculus Interaction | Grab, OVRInput, Haptics |
 | Queue | 미션 UI의 팔로우 로직 및 방패 찍기 구현 |
-| Curved UI | 구글 스프레드 시트를 사용해 데이터 관리 |
+| Curved UI | scrollView와 더불어 캐릭터 선택 UI 구현 |
 | 라이트맵| 성능의 최적화를 위해 라이트맵을 이용하여 게임 맵 구성 |
-| Raycasting | 자주 사용되는 객체는 Pool 관리하여 재사용 |
+| 내적(Dot) | 방패 던지기 방향 구현 |
 | OverlapSphere | 반경 안에 있는 적 감지 |
-| Dotween | ㅈ |
+| Dotween | 방패 회전 구현 |
+| Event Wrapper | 스페이스 스톤을 잡았으면 씬 전환 이벤트 처리 |
 
+<br>
 
 ## 4. 핵심 기능
 
 
 ## 5. 개발 인원 및 담당
 
-+총 2인 
++ 총 2인 (프로그래머 2인)
++ 공중 적 생성 및 공격 패턴 , 캐릭터 선택 UI 제작 , 방패 던지기 , 막기 , 사운드
 
 
 ## 6. 기술 문서( 담당한 기능 코드리뷰 포함)
 
 
 ## 7. 티스토리 개발일지
++ https://syyeom1002.tistory.com/category/%EB%A7%88%EB%B8%94%20VR%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%9C%EC%9E%914
 
 
 ## 8. 플레이 영상
-
++ https://www.youtube.com/watch?v=FLcZElzEC0A&t=49s
 ---
 
 **담당한 부분(작성한 스크립트)**
