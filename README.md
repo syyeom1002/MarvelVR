@@ -5,7 +5,7 @@
 
 <div align="center">
 
-  <img src="(https://github.com/user-attachments/assets/a0516eea-442e-41ec-bed1-6819eab7db4c)" width="49%" height="230"/>
+  <img src="https://github.com/user-attachments/assets/a0516eea-442e-41ec-bed1-6819eab7db4c" width="49%" height="230"/>
   <img src="https://github.com/LHuHyeon/LHuHyeon.github.io/assets/110723307/5e55198b-bf0b-4861-a7f1-8587381777ca" width="49%" height="230"/>
   <img src="https://github.com/LHuHyeon/LHuHyeon.github.io/assets/110723307/32d119d7-bbec-43f8-8bf9-e5a5aea8e6c5" width="49%" height="230"/>
   <img src="https://github.com/LHuHyeon/LHuHyeon.github.io/assets/110723307/b03533e5-91fb-4048-8f19-2def11c6e9d5" width="49%" height="230"/>
