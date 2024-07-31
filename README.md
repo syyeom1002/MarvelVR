@@ -143,7 +143,7 @@
 
 9.MyOVRScreenFade(oculus 제공 scripts 변형)
 
-10.TitleSceneMain
+10.GameSceneMain
 
 11.CubeGenerator
 
