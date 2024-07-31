@@ -114,11 +114,11 @@
 
 
 ## 7. 티스토리 개발일지
-+ https://syyeom1002.tistory.com/category/%EB%A7%88%EB%B8%94%20VR%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%9C%EC%9E%914
++ https://syyeom1002.tistory.com/category/%EB%A7%88%EB%B8%94%20VR%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%9C%EC%9E%91
 
 
 ## 8. 플레이 영상
-+ https://www.youtube.com/watch?v=FLcZElzEC0A&t=49s
++ https://www.youtube.com/watch?v=FLcZElzEC0A&t
 + 타이틀부터 다음 스테이지 잠금 해제 부분까지 전체적인 구현을 보실 수 있습니다.
 
 ---
