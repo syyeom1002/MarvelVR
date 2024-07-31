@@ -57,24 +57,35 @@
 
 
 ## 5. 핵심 기능
+
+
 #### 캐릭터 선택
 + Controller의 Thumbstick 으로 조작
 
 
 #### 이동 시스템
+![녹화_2024_07_30_20_52_01_47](https://github.com/user-attachments/assets/0c9152d7-3a7b-4341-8474-9505adc12a4f)
+![녹화_2024_07_30_21_01_21_985](https://github.com/user-attachments/assets/2dad20b5-6b8c-481f-a554-48394df6d80d)
 + 자동 이동
 + Leap
 
 
 #### 공격
+![녹화_2024_07_30_20_59_50_847](https://github.com/user-attachments/assets/e561759c-4568-4fc2-9fe4-ba2b972b0adb)
 + 방패 던지기
++ ![녹화_2024_07_30_21_03_22_969](https://github.com/user-attachments/assets/a9fb460c-7c83-4f43-928b-f6cc181c6bed)
 + 방패 찍기
 
 
 #### 적
+![녹화_2024_07_30_21_08_07_846](https://github.com/user-attachments/assets/681a87de-7626-4a73-904e-093a1984104b)
+![녹화_2024_07_30_21_09_51_391](https://github.com/user-attachments/assets/e2b303b9-a74e-4939-9d5d-6e0f50b46941)
 + 공중적(레이저 공격)
 + 지상적(총알 공격 , 순간 빠른 속도로 이동)
 
+
+#### 엔딩
+![녹화_2024_07_30_21_11_07_345](https://github.com/user-attachments/assets/04ec79d1-8c07-4b55-b1f4-5a899eb42117)
 
 ## 6. 기술 문서( 담당한 기능 코드리뷰 포함)
 
