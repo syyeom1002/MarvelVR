@@ -57,9 +57,15 @@
 
 
 ## 5. 핵심 기능
+<div align="center">
 
+  <img src="https://github.com/user-attachments/assets/0c9152d7-3a7b-4341-8474-9505adc12a4f" width="49%" height="280"/>
+  <img src="https://github.com/user-attachments/assets/2dad20b5-6b8c-481f-a554-48394df6d80d" width="49%" height="280"/>
+
+</div>
 
 #### 캐릭터 선택
+![캐릭터 선택 Curved ui](https://github.com/user-attachments/assets/ffaa517e-e88b-4efd-aa2a-f838e0149f31)
 + Controller의 Thumbstick 으로 조작
 
 
