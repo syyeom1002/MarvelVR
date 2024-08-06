@@ -112,8 +112,8 @@
 
 <br>
 
-## 6. 기술 문서( 담당한 기능 코드리뷰 포함)
-
+## 6. 기술 문서( 담당한 기능 코드 포함)
++ https://docs.google.com/presentation/d/1T0axGK3wXZ9rHkEpkYmO2pyhAodyl-_pG6aENf-RMZU/edit?hl=ko#slide=id.g2f0c2aa774c_0_13
 
 ## 7. 티스토리 개발일지
 + https://syyeom1002.tistory.com/category/%EB%A7%88%EB%B8%94%20VR%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%9C%EC%9E%91
