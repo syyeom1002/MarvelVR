@@ -65,7 +65,8 @@
 #### 캐릭터 선택
 <img src="https://github.com/user-attachments/assets/11cc95ff-1e0a-41db-99a3-302b18869e95" width="49%" height="280"/>
 
-+ Controller의 Thumbstick 으로 조작
++ Controller의 Thumbstick 으로 좌우 이동
++ Controller의 A버튼 클릭하면 캐릭터 선택 완료, 게임씬으로 전환
 
 
 #### 이동 시스템
@@ -77,7 +78,7 @@
 </div>
 
 + 자동 이동
-+ Leap
++ Leap : Contoller의 A 버튼을 이용하여 이동 가능
 
 
 #### 공격
@@ -88,8 +89,8 @@
 
 </div>
 
-+ 방패 던지기
-+ 방패 찍기
++ 방패 던지기 : Controller의 HandTrigger버튼으로 조작 가능
++ 방패 찍기 : Controller의 IndexTrigger 버튼으로 조작 가능
 
 
 #### 적
