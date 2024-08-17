@@ -44,7 +44,7 @@
 | Oculus Interaction | Grab, OVRInput, Haptics, Hand Grab Pose, Ray |
 | Queue | 미션 UI의 팔로우 로직 및 방패 찍기 구현 |
 | Curved UI | scrollView와 더불어 캐릭터 선택 UI 구현 |
-| 라이트맵| 성능의 최적화를 위해 라이트맵을 이용하여 게임 맵 구성 |
+| 라이트맵| 성능의 최적화를 위해 라이트맵을 이용하여 게임 맵 구성 fps 40->60 |
 | 내적(Dot) | 방패 던지기 방향 구현 |
 | OverlapSphere | 반경 안에 있는 적 감지 |
 | Dotween | 방패 회전 구현 |
