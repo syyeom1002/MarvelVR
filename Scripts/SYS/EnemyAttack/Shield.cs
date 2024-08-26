@@ -12,9 +12,9 @@ using TMPro;
 public class Shield : MonoBehaviour
 {
     [SerializeField] private GameSceneMain gameSceneMain;
-    [SerializeField] private Transform centerEyeAnchor;
-    public Transform lHandAnchor;
-    public Transform pos;
+    [SerializeField] private Transform centerEyeAnchor; //눈의 위치
+    public Transform lHandAnchor; //왼쪽 손의 위치 
+    public Transform pos; //방패의 위치
     public float av = 0f;//컨트롤러 속도
 
     private float moveSpeed = 15;
@@ -45,10 +45,12 @@ public class Shield : MonoBehaviour
 
     void FixedUpdate()
     {
-        var velocity = OVRInput.GetLocalControllerVelocity(OVRInput.Controller.LTouch); //.normalized;
-        this.av = Mathf.Abs((float)Math.Truncate(((velocity.x + velocity.y + velocity.z) / 3.0f) * 100f) / 100f);
-        
-        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch)&&av>=0) //원래 0.45임 테스트 위해 0으로 바꿔놈
+        //컨트롤러 속도 구하기
+        var velocity = OVRInput.GetLocalControllerVelocity(OVRInput.Controller.LTouch); 
+        this.av = Mathf.Abs((float)Math.Truncate(((velocity.x + velocity.y + velocity.z) / 3.0f) * 100f) / 100f); //.normalized;
+
+        //팔을 스윙했는가 ?
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch) && this.av >= 0.45f) 
         {
             this.isShoot = false;
             this.isPlay = false;
@@ -56,31 +58,24 @@ public class Shield : MonoBehaviour
 
         if (this.isShoot == false)
         {
-            //손을 떼었을 때 날라감
-            if (!OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch))
+            //버튼에서 손이 떼어져있고, 속도가 어느정도 감소했을 때
+            if (!OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch) && this.av < 0.06f)
             {
                 if (isPlay == false)
                 {
                     GetComponent<AudioSource>().PlayOneShot(audioClip);
                     this.isPlay = true;
                 }
-                if (this.av < 0.06f)
-                {
-                    this.trailRenderer.enabled = true;
-                    this.isShoot = true;
-                    this.pos.SetParent(null);
 
-                    this.dir = this.centerEyeAnchor.forward;
-                    Debug.LogFormat("<color=lime>손을 떼었을 때 날라감</color>");
-                    //내적하기
-                    if (centerEyeAnchor.forward.y > 0.2f)
-                    {
-                        this.dir.y -= 0.15f;
-                    }
-                    this.dot = Vector3.Dot(this.pos.forward, centerEyeAnchor.forward);
-                    this.moveCoroutine = this.StartCoroutine(this.CoMove());
-                }
-                
+                Debug.LogFormat("<color=lime>손을 떼었을 때 날라감</color>");
+
+                this.trailRenderer.enabled = true;
+                this.isShoot = true;
+                this.pos.SetParent(null);
+
+                this.dir = this.centerEyeAnchor.forward;
+                this.moveCoroutine = this.StartCoroutine(this.CoMove());
+
             }
 
         }
@@ -113,61 +108,64 @@ public class Shield : MonoBehaviour
 
     IEnumerator CoMove()
     {
+        //DrawArrow.ForDebug(this.pos.position, centerEyeAnchor.forward, 1f, Color.red, ArrowType.Solid);
+        //Debug.LogFormat("<color=red>targetdot: {0}</color>", targetDot);
         this.Dorotate();
         var target = gameSceneMain.FindEnemyDir();
         
+        //적이 있는 경우
         if (target != null)
         {
             this.targetDir = (target.transform.position - this.pos.transform.position).normalized;
+
             //지상적 몸쪽으로 날라가기
             if (target.name == "GroundEnemy(Clone)")
             {
                 targetDir.y += 0.08f;
             }
         }
+        //적이 없는 경우
         else if (target == null)
         {
             targetDir = (this.lHandAnchor.position - this.pos.position).normalized;
         }
-        var targetDot = Vector3.Dot(targetDir, centerEyeAnchor.forward);
-        //DrawArrow.ForDebug(this.pos.position, centerEyeAnchor.forward, 1f, Color.red, ArrowType.Solid);
-        //Debug.LogFormat("<color=red>targetdot: {0}</color>", targetDot);
+
+        //내적하기
+        this.dot = Vector3.Dot(this.pos.forward, centerEyeAnchor.forward); //손의 앞방향과 시선 내적
+        var targetDot = Vector3.Dot(targetDir, centerEyeAnchor.forward); // 타겟의 방향과 시선 내적
+        
         while (true)
         {
             //손과 눈의 위치가 비슷할때(30도 이하)
             if (this.dot > 0.8f)
             {
+                //타겟방향으로 던졌을때 타겟방향으로 날라감
                 if (targetDot > 0.9f)
                 {
                     this.pos.Translate(targetDir * this.moveSpeed * Time.fixedDeltaTime, Space.World);
                 }
+
+                //다른 쪽으로 던졌을때 눈의 앞방향으로 날라감
                 else
                 {
                     this.pos.Translate(dir * this.moveSpeed * Time.fixedDeltaTime, Space.World);
                 }
                 
             }
-            //손과 눈의 위치가 다를 때
+            //손과 눈의 위치가 다를 때 손의 앞방향으로 날라가기
             else
-            { 
-                if (targetDot > 0.85f)
-                {
-                    targetDir = this.pos.forward;
-                    this.pos.Translate(targetDir * this.moveSpeed * Time.fixedDeltaTime, Space.World);
-                    //Debug.Log("손과 눈의 위치가 다를 때 타겟 방향으로 날라가기");
-                }
-                else
-                {
-                    targetDir = this.pos.forward;
-                    this.pos.Translate(targetDir * this.moveSpeed * Time.fixedDeltaTime, Space.World);
-                }
+            {
+
+                targetDir = this.pos.forward;
+                this.pos.Translate(targetDir * this.moveSpeed * Time.fixedDeltaTime, Space.World);
+
             }
 
             if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch) && this.pos.position != lHandAnchor.position)
             {
                 isGrab = true;
                 StopCoroutine(this.moveCoroutine);
-                DrawArrow.ForDebug(this.pos.transform.position, dir, 10f, Color.blue, ArrowType.Solid);
+                //DrawArrow.ForDebug(this.pos.transform.position, dir, 10f, Color.blue, ArrowType.Solid);
             }
 
             yield return null;
