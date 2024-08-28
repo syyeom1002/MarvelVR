@@ -22,7 +22,7 @@
 > 
 > + 개발기간: 2023.11.01 ~ 2024.01.15 ( 약 2개월 )
 > + 로드맵
-> <img src="https://github.com/user-attachments/assets/ea197567-2a41-4944-a5d5-185fc048605a" width="50%" height="140"/>
+> <img src="https://github.com/user-attachments/assets/10d0871b-5dd1-48fc-880e-e0973c026a50" width="50%" height="140"/>
 
 <br>
 
