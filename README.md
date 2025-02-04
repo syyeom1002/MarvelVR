@@ -122,7 +122,8 @@
 
 
 ## 8. 플레이 영상
-+ https://www.youtube.com/watch?v=FLcZElzEC0A&t
++ [https://www.youtube.com/watch?v=FLcZElzEC0A&t](
++ https://youtu.be/t8eY3hfzc3E
 + 타이틀, 조작방법 , 사운드 등 전체적인 구현을 보실 수 있습니다.
 
 ---
