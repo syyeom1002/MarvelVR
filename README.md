@@ -116,6 +116,7 @@
 ## 6. 담당 기능 구현 과정
 <img src="https://github.com/user-attachments/assets/981d3eb8-d3ed-436b-aabe-62aa86c9ebcc" width="50%" height="250"/>
 + https://docs.google.com/presentation/d/1T0axGK3wXZ9rHkEpkYmO2pyhAodyl-_pG6aENf-RMZU/edit?hl=ko#slide=id.g2f0c2aa774c_0_13
++ https://docs.google.com/presentation/d/18LbNZaE-493vaK3cXxSN61EO2EheWrlng_FmlQwHRdQ/edit?usp=sharing
 
 ## 7. 티스토리 개발일지
 + https://syyeom1002.tistory.com/category/%EB%A7%88%EB%B8%94%20VR%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%9C%EC%9E%91
