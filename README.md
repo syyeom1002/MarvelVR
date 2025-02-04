@@ -113,7 +113,7 @@
 
 <br>
 
-## 6. 담당 기능 핵심 코드 설명
+## 6. 담당 기능 구현 과정
 <img src="https://github.com/user-attachments/assets/981d3eb8-d3ed-436b-aabe-62aa86c9ebcc" width="50%" height="250"/>
 + https://docs.google.com/presentation/d/1T0axGK3wXZ9rHkEpkYmO2pyhAodyl-_pG6aENf-RMZU/edit?hl=ko#slide=id.g2f0c2aa774c_0_13
 
