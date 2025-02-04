@@ -113,7 +113,7 @@
 
 <br>
 
-## 6. 기술 문서( 담당한 핵심기능 코드 포함)
+## 6. 담당 기능 핵심 코드 설명
 + https://docs.google.com/presentation/d/1T0axGK3wXZ9rHkEpkYmO2pyhAodyl-_pG6aENf-RMZU/edit?hl=ko#slide=id.g2f0c2aa774c_0_13
 
 ## 7. 티스토리 개발일지
